@@ -1,0 +1,32 @@
+xbox_one_mapping = {
+    "A": 0,
+    "B": 1,
+    "X": 2,
+    "Y": 3,
+    "LB": 4,
+    "RB": 5,
+    "View(Back)": 6,
+    "Menu(Start)": 7,
+    "Xbox": 8,
+    "LS_Click": 9,
+    "RS_Click": 10
+    # etc.
+}
+
+# For axes, if your triggers are separate:
+xbox_one_axes = {
+    "LX": 0,
+    "LY": 1,
+    "LT": 2,
+    "RX": 3,
+    "RY": 4,
+    "RT": 5
+}
+
+# For hats
+xbox_one_hats = {
+    "right": (1,0),
+    "left": (-1,0),
+    "up": (0,1),
+    "down": (0,-1)
+}
