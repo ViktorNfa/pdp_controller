@@ -27,7 +27,7 @@ def vibrate_strong():
         -1, 
         0,
         ff.Trigger(0, 0),
-        ff.Replay(500, 0),  # 0.5 second
+        ff.Replay(1000, 0),  # 1 second
         ff.EffectType(
             ff_rumble_effect=ff.Rumble(strong_magnitude=0xFFFF, weak_magnitude=0x0000)
         )
@@ -35,7 +35,7 @@ def vibrate_strong():
 
     eid = dev.upload_effect(effect)
     dev.write(ecodes.EV_FF, eid, 1)  # play it once
-    time.sleep(0.5)
+    time.sleep(1.0)
     dev.erase_effect(eid)
 
 
@@ -54,7 +54,7 @@ def vibrate_weak():
         -1, 
         0,
         ff.Trigger(0, 0),
-        ff.Replay(500, 0),
+        ff.Replay(1000, 0),
         ff.EffectType(
             ff_rumble_effect=ff.Rumble(strong_magnitude=0x0000, weak_magnitude=0xFFFF)
         )
@@ -62,7 +62,7 @@ def vibrate_weak():
 
     eid = dev.upload_effect(effect)
     dev.write(ecodes.EV_FF, eid, 1)
-    time.sleep(0.5)
+    time.sleep(1.0)
     dev.erase_effect(eid)
 
 
