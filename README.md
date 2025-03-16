@@ -31,6 +31,7 @@ A small collection of Python scripts to **discover**, **calibrate**, **visualize
     - Strong rumble
     - Weak rumble
     - Sine wave effect
+    
     Important: Set the correct EVENT_DEVICE_PATH near the top of the script (e.g., /dev/input/event7). To find which event node your gamepad uses, check:
     ```bash
     cat /proc/bus/input/devices
